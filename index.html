@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header><h1>Eliftech IT School  FrontEnd  Les1</h1></header>
+  <div class="problem">
+    <h2>1. Pyramid game</h2>
+    <ul>
+      <li>
+        Ask user to enter natural number N  (0&lt;N&lt;=20) // use prompt()
+      </li>
+      <li>
+        If number N is not natural or doesn`t match required range, 
+        output error message in console // For example: 
+        console.error(‘Incorrect!’);
+      </li>
+      <li>
+        If N match all requirements 
+        you should build and output in console pyramid with N floors
+      </li>
+      <li>
+        To build pyramid use spaces, square brackets, 
+        tilde and \n (new line) characters.
+      </li>
+    </ul>
+    <button id="pyramid">try</button>
+  </div>
+  <div class="problem">
+    <h2>2. Guessing game</h2>
+    <ul>
+      <li>
+        Show a message ‘Do you want to play a game?’ // use confirm()
+      </li>
+      <li>
+        If user clicked ‘Cancel’ – output in console message 
+        `You did not become a millionaire`, if clicked ‘Ok’ – start a game: 
+        randomly /* Math.random() */ choose a number in range [0; 5], and ask 
+        user to enter a number
+      </li>
+      <li>
+        User has 3 attempts to guess a number
+      </li>
+      <li>
+        If user guessed number on 1-st attempt prize is 10$ 
+        (maximum prize for current numbers range), 2-nd attempt – 5$, 
+        3-rd attempt – 2$
+      </li>
+      <li>
+        If user did not guess a number, output in console message 
+        ‘Thank you for a game. Your prize is: …’, and ask if he wants 
+        to play again.
+      </li>
+      <li>
+        If user did guess - ask if he wants to continue 
+        a game // use confirm().
+      </li>
+      <li>
+        If user does not want to continue – output in console 
+        message ‘Thank you for a game. Your prize is: …’, and 
+        ask if he wants to play again.
+      </li>
+      <li>
+        If user does want to continue, make number range twice 
+        as big as the previous one /* for example [0; 5] -> [0; 10] 
+        */, and three times bigger maximum prize /* for example on 
+        1-st attempt prize will be 30$, 2-nd attempt – 15$, 3-rd 
+        attempt – 7$ */. Prize must be added to the previous one 
+        and number of attempts should be set to 3 (user should has 
+        3 attempts to guess a number for each numbers range)
+      </li>
+      <li>
+        Each time you ask user to enter a number /* using prompt() 
+        */ you should show him a range of numbers, how much attempts 
+        he has left, his total prize and possible prize on current attempt.
+      </li>
+    </ul>
+    <button id="guessing">try</button>
+  </div>
+  <script src="./pyramid.js"></script>
+  <script src="./guessing.js"></script>
+</body>
+</html>
